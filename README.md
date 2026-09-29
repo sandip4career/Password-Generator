@@ -1,20 +1,124 @@
-<<<<<<< HEAD
-# Password-Generator
-=======
-# React + Vite
+# 🔐 Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple and responsive **Password Generator** built with **React.js**.
+It allows users to generate secure passwords by choosing the password length and whether to include numbers and special characters.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Generate random passwords
+* Adjustable password length
+* Include/exclude numbers
+* Include/exclude special characters
+* Copy generated password to clipboard
+* Responsive user interface
+* Built using React Hooks
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Hooks
 
-## Expanding the Oxlint configuration
+  * `useState`
+  * `useCallback`
+  * `useEffect`
+  * `useRef`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
->>>>>>> 31f3188 (Initial commit)
+## 📂 Project Structure
+
+```text
+passwordGenerator/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sandip4career/Password-Generator.git
+```
+
+Go to the project directory:
+
+```bash
+cd Password-Generator
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+## 💡 How It Works
+
+The application uses React state to manage:
+
+* Password length
+* Number inclusion
+* Special-character inclusion
+* Generated password
+
+React's `useCallback` is used to optimize the password generation function, while `useRef` is used to access the generated password for copying.
+
+## 📸 Preview
+
+You can add a screenshot of the application here:
+
+```markdown
+![Password Generator](./screenshots/password-generator.png)
+```
+
+## 🎯 Learning Goals
+
+This project was created to practice:
+
+* React functional components
+* React Hooks
+* State management
+* Event handling
+* Conditional logic
+* Random password generation
+* Clipboard API
+* Git and GitHub
+
+## 🔮 Future Improvements
+
+* Password strength indicator
+* Custom character selection
+* Password history
+* Dark/light mode
+* Improved accessibility
+
+## 👨‍💻 Author
+
+**Sandip Yadav**
+
+* GitHub: https://github.com/sandip4career
+* LinkedIn: https://linkedin.com/in/sandip4career/
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
